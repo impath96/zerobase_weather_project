@@ -1,0 +1,27 @@
+### GET weather information
+GET https://api.openweathermap.org/data/2.5/weather?q=seoul&appid=7fccfaad743a3c5a7dfe8af2bf2242cc
+
+### GET weather icon
+GET https://openweathermap.org/img/wn/01d@2x.png
+
+### POST request for create dinary
+POST http://localhost:8080/create/diary?date=2023-02-15
+
+오늘 코딩하는 날!
+
+### GET request for read diary by date
+GET http://localhost:8080/read/diary?date=2023-02-15
+
+### GET reqeust for read diary by invalid date
+GET http://localhost:8080/read/diary?date=4datqw
+
+### GET request for read diaries between startDate and endDate
+GET http://localhost:8080/read/diaries?startDate=2023-02-15&endDate=2023-03-19
+
+### PUT request for update the diary
+PUT http://localhost:8080/update/diary?date=2023-02-15
+
+3-19일 일기 text 변경!!
+
+### DELETE request for delete the diary
+DELETE http://localhost:8080/delete/diary?date=2023-03-19
